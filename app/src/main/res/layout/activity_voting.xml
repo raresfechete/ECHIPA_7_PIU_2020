@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VotingActivity">
+
+
+    <ImageView
+        android:id="@+id/image_student"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:padding="10dp"
+        android:src="@drawable/student"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="1"
+    android:textSize="30sp"
+    app:layout_constraintHorizontal_bias="0.744"
+    app:layout_constraintLeft_toRightOf="@id/image_student2"
+    app:layout_constraintRight_toLeftOf="@id/seekbar1"
+    app:layout_constraintTop_toTopOf="@id/image_student2" />
+
+    <TextView
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Rares Fechete"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="@id/image_student2"
+        app:layout_constraintTop_toBottomOf="@id/image_student2"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Cristian Vasiu"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/image_student3"
+        app:layout_constraintTop_toBottomOf="@id/image_student3"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Paul Farcasiu"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/image_student4"
+        app:layout_constraintTop_toBottomOf="@id/image_student4"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintLeft_toRightOf="@id/image_student3"
+        app:layout_constraintRight_toLeftOf="@id/seekbar2"
+        app:layout_constraintTop_toTopOf="@id/image_student3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintLeft_toRightOf="@id/image_student4"
+        app:layout_constraintRight_toLeftOf="@id/seekbar3"
+        app:layout_constraintTop_toTopOf="@id/image_student4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:text="10"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/seekbar1"
+        app:layout_constraintTop_toTopOf="@id/image_student2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="10"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/seekbar2"
+        app:layout_constraintTop_toTopOf="@id/image_student3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="10"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/seekbar3"
+        app:layout_constraintTop_toTopOf="@id/image_student4" />
+
+    <ImageView
+        android:id="@+id/image_student2"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="300dp"
+        android:padding="10dp"
+        android:src="@drawable/student"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_student3"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginRight="300dp"
+        android:padding="10dp"
+        android:src="@drawable/student"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_student4"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginRight="300dp"
+        android:padding="10dp"
+        android:src="@drawable/student"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="151dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Alex Pereanu"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNumeCurs"
+        android:layout_width="404dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="568dp"
+        android:background="@color/deepskyblue"
+        android:gravity="left"
+        android:text="Numele Cursului"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNumeTask"
+        android:layout_width="403dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="536dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="Task 1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLinie"
+        android:layout_width="406dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="524dp"
+        android:background="@color/deepskyblue"
+        android:gravity="left"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:max="10"
+        android:padding="8dp"
+        android:progress="1"
+        android:progressTint="@android:color/holo_green_light"
+        android:thumbTint="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/image_student2"
+        app:layout_constraintTop_toTopOf="@id/image_student2" />
+
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="182dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="184dp"
+        android:max="10"
+        android:padding="8dp"
+        android:progress="1"
+        android:progressTint="@android:color/holo_green_light"
+        android:thumbTint="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/image_student3"
+        app:layout_constraintTop_toTopOf="@id/image_student2" />
+
+    <SeekBar
+        android:id="@+id/seekbar3"
+        android:layout_width="181dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="360dp"
+        android:max="10"
+        android:padding="8dp"
+        android:progress="1"
+        android:progressTint="@android:color/holo_green_light"
+        android:thumbTint="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/image_student4"
+        app:layout_constraintTop_toTopOf="@id/image_student2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

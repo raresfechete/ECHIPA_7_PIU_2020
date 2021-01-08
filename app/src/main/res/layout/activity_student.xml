@@ -92,7 +92,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/student_statistica_cursuri"
         app:layout_constraintRight_toRightOf="@id/student_statistica_cursuri"
-        app:layout_constraintTop_toBottomOf="@id/student_statistica_quiz" />
+        app:layout_constraintTop_toBottomOf="@id/student_statistica_quiz"
+        android:onClick="voteaza"/>
 
     <Button
         android:layout_width="0dp"

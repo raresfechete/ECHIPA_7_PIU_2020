@@ -84,7 +84,7 @@
         app:layout_constraintRight_toRightOf="@id/sigla_utcn2"
         app:layout_constraintTop_toBottomOf="@id/student_nivel2"
 
-        app:layout_constraintVertical_bias="0.382"
+        app:layout_constraintVertical_bias="0.381"
         tools:listitem="@layout/quiz_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

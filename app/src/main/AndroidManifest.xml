@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectPIU">
-        <activity android:name=".StatisticaQuizuri"></activity>
+        <activity android:name=".VotingActivity"></activity>
+        <activity android:name=".StatisticaQuizuri" />
         <activity android:name=".StatisticaCursuri" />
         <activity android:name=".Student" />
         <activity android:name=".MainActivity">

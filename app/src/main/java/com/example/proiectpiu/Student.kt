@@ -24,4 +24,13 @@ class Student : AppCompatActivity() {
         startActivity(intent)
 
     }
+
+    fun voteaza(view: View) {
+
+        val intent = Intent(this, VotingActivity::class.java)
+        startActivity(intent)
+
+    }
+
+
 }
