@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StatisticaQuizuri">
+    tools:context=".StatisticaQuizuri"
+    android:background="@drawable/i1">
 
     <ImageView
         android:id="@+id/image_student2"

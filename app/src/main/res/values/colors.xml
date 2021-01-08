@@ -11,4 +11,8 @@
     <color name="deepskyblue">#00BFFF</color>
     <color name="gray">#A9A9A9</color>
     <color name="dimgray">#696969</color>
+    <color name="niceOrange">#FD8700</color>
+    <color name="albastrulMamei">#0A15AB</color>
+    <color name="verdeleMamei">#026616</color>
+    <color name="rozulMamei">#FF6666</color>
 </resources>

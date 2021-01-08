@@ -32,5 +32,11 @@ class Student : AppCompatActivity() {
 
     }
 
+    fun feedback(view: View) {
+
+        val intent = Intent(this, FeedbackActivity::class.java)
+        startActivity(intent)
+    }
+
 
 }

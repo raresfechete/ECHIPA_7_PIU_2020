@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VotingActivity">
+    tools:context=".VotingActivity"
+    android:background="@drawable/i7">
 
 
     <ImageView
@@ -24,6 +25,7 @@
     android:layout_marginTop="24dp"
     android:text="1"
     android:textSize="30sp"
+        android:textColor="@color/albastrulMamei"
     app:layout_constraintHorizontal_bias="0.744"
     app:layout_constraintLeft_toRightOf="@id/image_student2"
     app:layout_constraintRight_toLeftOf="@id/seekbar1"
@@ -74,7 +76,8 @@
         app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintLeft_toRightOf="@id/image_student3"
         app:layout_constraintRight_toLeftOf="@id/seekbar2"
-        app:layout_constraintTop_toTopOf="@id/image_student3" />
+        app:layout_constraintTop_toTopOf="@id/image_student3"
+        android:textColor="@color/albastrulMamei"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -85,7 +88,8 @@
         app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintLeft_toRightOf="@id/image_student4"
         app:layout_constraintRight_toLeftOf="@id/seekbar3"
-        app:layout_constraintTop_toTopOf="@id/image_student4" />
+        app:layout_constraintTop_toTopOf="@id/image_student4"
+        android:textColor="@color/albastrulMamei"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,6 +100,7 @@
         android:textSize="30sp"
         app:layout_constraintLeft_toRightOf="@id/seekbar1"
         app:layout_constraintTop_toTopOf="@id/image_student2"
+        android:textColor="@color/albastrulMamei"
         />
 
     <TextView
@@ -106,7 +111,8 @@
         android:text="10"
         android:textSize="30sp"
         app:layout_constraintLeft_toRightOf="@id/seekbar2"
-        app:layout_constraintTop_toTopOf="@id/image_student3" />
+        app:layout_constraintTop_toTopOf="@id/image_student3"
+        android:textColor="@color/albastrulMamei"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -116,7 +122,8 @@
         android:text="10"
         android:textSize="30sp"
         app:layout_constraintLeft_toRightOf="@id/seekbar3"
-        app:layout_constraintTop_toTopOf="@id/image_student4" />
+        app:layout_constraintTop_toTopOf="@id/image_student4"
+        android:textColor="@color/albastrulMamei"/>
 
     <ImageView
         android:id="@+id/image_student2"
@@ -171,7 +178,7 @@
         android:layout_height="33dp"
         android:layout_marginLeft="4dp"
         android:layout_marginBottom="568dp"
-        android:background="@color/deepskyblue"
+        android:background="@color/albastrulMamei"
         android:gravity="left"
         android:text="Numele Cursului"
         android:textColor="@color/white"
@@ -186,7 +193,7 @@
         android:layout_height="37dp"
         android:layout_marginLeft="4dp"
         android:layout_marginBottom="536dp"
-        android:background="@color/gray"
+        android:background="#FF9999"
         android:gravity="center"
         android:text="Task 1"
         android:textColor="@color/white"
@@ -201,7 +208,7 @@
         android:layout_height="12dp"
         android:layout_marginLeft="4dp"
         android:layout_marginBottom="524dp"
-        android:background="@color/deepskyblue"
+        android:background="@color/albastrulMamei"
         android:gravity="left"
         android:text=""
         android:textColor="@color/white"
@@ -219,7 +226,7 @@
         android:max="10"
         android:padding="8dp"
         android:progress="1"
-        android:progressTint="@android:color/holo_green_light"
+        android:progressTint="@color/verdeleMamei"
         android:thumbTint="@color/black"
         app:layout_constraintLeft_toRightOf="@id/image_student2"
         app:layout_constraintTop_toTopOf="@id/image_student2" />
@@ -233,7 +240,7 @@
         android:max="10"
         android:padding="8dp"
         android:progress="1"
-        android:progressTint="@android:color/holo_green_light"
+        android:progressTint="@color/verdeleMamei"
         android:thumbTint="@color/black"
         app:layout_constraintLeft_toRightOf="@id/image_student3"
         app:layout_constraintTop_toTopOf="@id/image_student2" />
@@ -247,7 +254,7 @@
         android:max="10"
         android:padding="8dp"
         android:progress="1"
-        android:progressTint="@android:color/holo_green_light"
+        android:progressTint="@color/verdeleMamei"
         android:thumbTint="@color/black"
         app:layout_constraintLeft_toRightOf="@id/image_student4"
         app:layout_constraintTop_toTopOf="@id/image_student2" />
