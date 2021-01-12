@@ -43,4 +43,9 @@ class Student : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun achievement(view: View) {
+        val intent = Intent(this, Achievements::class.java)
+        startActivity(intent)
+    }
+
 }
