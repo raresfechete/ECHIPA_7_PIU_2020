@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectPIU">
-        <activity android:name=".FeedbackActivity"></activity>
+        <activity android:name=".Achievements"></activity>
+        <activity android:name=".Profil" />
+        <activity android:name=".FeedbackActivity" />
         <activity android:name=".VotingActivity" />
         <activity android:name=".StatisticaQuizuri" />
         <activity android:name=".StatisticaCursuri" />

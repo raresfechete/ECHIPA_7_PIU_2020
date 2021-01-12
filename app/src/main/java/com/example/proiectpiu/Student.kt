@@ -38,5 +38,9 @@ class Student : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun goToProfil(view: View) {
+        val intent = Intent(this, Profil::class.java)
+        startActivity(intent)
+    }
 
 }

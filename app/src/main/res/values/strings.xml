@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ProiectPIU</string>
     <string name="name1">Alex Pereanu</string>
+    <string name="profesie1">Student</string>
+    <string name="profil">Calculatoare</string>
+    <string name="add_curs">Add Curs</string>
 </resources>

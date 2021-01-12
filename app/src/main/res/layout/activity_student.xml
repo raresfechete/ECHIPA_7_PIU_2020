@@ -17,14 +17,15 @@
         android:padding="10dp"
         android:src="@drawable/student"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="goToProfil"/>
 
     <TextView
         android:id="@+id/student_name"
         android:layout_width="151dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
-        android:text="Alex Pereanu"
+        android:text="@string/name1"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -41,7 +42,7 @@
         android:layout_height="29dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:text="Calculatoare"
+        android:text="@string/profil"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
