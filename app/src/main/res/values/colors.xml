@@ -15,4 +15,5 @@
     <color name="albastrulMamei">#0A15AB</color>
     <color name="verdeleMamei">#026616</color>
     <color name="rozulMamei">#FF6666</color>
+    <color name="inactivGray">#c6c6c6</color>
 </resources>

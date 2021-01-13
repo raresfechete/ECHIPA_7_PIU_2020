@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.EditText
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proiectpiu.adapters.ChatAdapter
@@ -18,6 +19,7 @@ class Chat : AppCompatActivity() {
     private lateinit var submitButton: Button
     private lateinit var qaButton: Button
     private var messageNumber: Int = 2
+    private var qatoggle: Boolean = false
 
 
 
@@ -65,19 +67,23 @@ class Chat : AppCompatActivity() {
         }
 
         qaButton.setOnClickListener(){
-            val messageText: EditText = findViewById(R.id.chat_message_text)
-            if(!messageText.text.isEmpty()){
-                val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
-                val currentDate = sdf.format(Date())
+            val messageText : String
+            val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+            val currentDate = sdf.format(Date())
 
-                val message =  Message("Cristi", currentDate,messageText.text.toString())
-                messageText.setText("A inceput modul Q&A")
-                messageText.setTextColor(R.color.rozulMamei);
-                chatAdapter!!.addItem(0, message)
-                chatAdapter!!.notifyItemInserted(0)
-                recyclerRef.smoothScrollToPosition(0)
-
+            qatoggle = !qatoggle
+            if (qatoggle){
+                qaButton.setBackgroundTintList(ContextCompat.getColorStateList(getApplicationContext(), R.color.rozulMamei))
+                messageText = "A inceput modul Q&A"
             }
+            else{
+                qaButton.setBackgroundTintList(ContextCompat.getColorStateList(getApplicationContext(), R.color.inactivGray))
+                messageText = "A incetat modul Q&A"
+            }
+            val message =  Message("Q&A Lord", currentDate,messageText)
+            chatAdapter!!.addItem(0, message)
+            chatAdapter!!.notifyItemInserted(0)
+            recyclerRef.smoothScrollToPosition(0)
 
         }
 
