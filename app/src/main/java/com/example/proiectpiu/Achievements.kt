@@ -22,7 +22,6 @@ class Achievements : AppCompatActivity() {
         achievementAdapter = AchievementsAdapter(this@Achievements, lista.getAchievementsAvailable())
         listReference.adapter = achievementAdapter
 
-        registerForContextMenu(listReference)
     }
 
 

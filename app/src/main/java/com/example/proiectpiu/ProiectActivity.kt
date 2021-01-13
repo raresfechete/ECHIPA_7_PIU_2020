@@ -3,6 +3,7 @@ package com.example.proiectpiu
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
 import com.example.proiectpiu.adapters.ProiectAdapter
@@ -17,6 +18,7 @@ class ProiectActivity : AppCompatActivity() {
         val listReference = findViewById<ListView>(R.id.quiz_list)
         proiectAdapter = ProiectAdapter(this@ProiectActivity, ProiectLista().getProiecte())
         listReference.adapter = proiectAdapter
+
     }
 
     fun joinTeam(view : View)
@@ -34,6 +36,7 @@ class ProiectActivity : AppCompatActivity() {
                 "Ai propus un lider",
                 Toast.LENGTH_SHORT
         ).show()
+
     }
 
     fun vreiSaFiiLider(view : View){
@@ -42,6 +45,7 @@ class ProiectActivity : AppCompatActivity() {
                 "Vrei sa fii lider",
                 Toast.LENGTH_SHORT
         ).show()
+
     }
 
 }

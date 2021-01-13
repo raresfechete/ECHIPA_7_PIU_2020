@@ -24,7 +24,6 @@ class StatisticaQuizuri : AppCompatActivity() {
         quizAdapter = QuizAdapter(this@StatisticaQuizuri, Quizuri().getQuizuri())
         listReference.adapter = quizAdapter
 
-        registerForContextMenu(listReference)
     }
 
     fun goToProfil(view: View) {

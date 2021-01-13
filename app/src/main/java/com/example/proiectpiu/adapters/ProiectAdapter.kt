@@ -28,6 +28,11 @@ class ProiectAdapter(private val context: Context, private var proiectList: Arra
         return position.toLong()
     }
 
+    fun deleteItem(position: Int)
+    {
+        proiectList.removeAt(position)
+    }
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
         var item: View
