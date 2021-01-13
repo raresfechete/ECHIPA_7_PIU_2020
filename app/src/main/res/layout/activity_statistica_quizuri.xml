@@ -20,7 +20,7 @@
         android:onClick="goToProfil"/>
 
     <TextView
-        android:id="@+id/student_name2"
+        android:id="@+id/student_name_quiz"
         android:layout_width="151dp"
         android:layout_height="32dp"
         android:layout_marginLeft="16dp"
@@ -47,7 +47,7 @@
         android:textStyle="bold"
         android:gravity="center"
         app:layout_constraintLeft_toRightOf="@+id/image_student2"
-        app:layout_constraintTop_toBottomOf="@+id/student_name2"
+        app:layout_constraintTop_toBottomOf="@+id/student_name_quiz"
 
         />
 
@@ -72,7 +72,7 @@
         android:layout_height="90dp"
         android:layout_marginLeft="12dp"
         android:src="@drawable/utcn"
-        app:layout_constraintLeft_toRightOf="@+id/student_name2"
+        app:layout_constraintLeft_toRightOf="@+id/student_name_quiz"
         app:layout_constraintTop_toTopOf="@+id/image_student2" />
 
     <ListView

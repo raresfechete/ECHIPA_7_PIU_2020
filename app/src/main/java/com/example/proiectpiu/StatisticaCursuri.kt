@@ -6,8 +6,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.ListView
+import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.Observer
 import com.example.proiectpiu.adapters.CursuriAdapter
+import java.util.*
 
 class StatisticaCursuri : AppCompatActivity(){
 
@@ -37,5 +40,6 @@ class StatisticaCursuri : AppCompatActivity(){
         cursuriAdapter?.notifyDataSetChanged()
         Toast.makeText(this,"Curs Adaugat",Toast.LENGTH_SHORT).show()
     }
+
 
 }

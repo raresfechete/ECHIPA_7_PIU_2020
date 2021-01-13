@@ -4,14 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
+import java.util.*
+
 
 class Profil : AppCompatActivity() {
 
-    var name=R.id.profil_student_name.toString()
-    var profil=R.id.profil_profil_student.toString()
+    val name = MutableLiveData<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        name.value =""
         setContentView(R.layout.activity_profil)
     }
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ListView
+import android.widget.TextView
 import com.example.proiectpiu.adapters.AchievementsAdapter
 
 class Achievements : AppCompatActivity() {
@@ -53,6 +54,5 @@ class Achievements : AppCompatActivity() {
 
         registerForContextMenu(listReference)
     }
-
 
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ListView
+import android.widget.TextView
 import com.example.proiectpiu.adapters.CursuriAdapter
 import com.example.proiectpiu.adapters.QuizAdapter
 

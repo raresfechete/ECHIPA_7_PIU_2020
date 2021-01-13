@@ -160,7 +160,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/student_name"
+        android:id="@+id/student_name_voting"
         android:layout_width="151dp"
         android:layout_height="32dp"
         android:layout_marginLeft="160dp"
