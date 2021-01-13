@@ -20,8 +20,6 @@ class Profil : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun adaugareCurs(view: View) {
-        StatisticaCursuri().modificare(Curs("asd","ccc",10,"htttp"))
-    }
+
 
 }

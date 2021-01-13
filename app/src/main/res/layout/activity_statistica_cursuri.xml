@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Student"
+    tools:context=".StatisticaCursuri"
     android:background="@drawable/i1">
 
 
@@ -81,14 +81,83 @@
     <ListView
         android:id="@+id/myRecyclerView"
         android:layout_width="407dp"
-        android:layout_height="240dp"
+        android:layout_height="400dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintLeft_toLeftOf="@id/student_nivel"
+        app:layout_constraintRight_toRightOf="@id/sigla_utcn"
+        app:layout_constraintTop_toBottomOf="@id/button_add"
+        app:layout_constraintVertical_bias="0.399"
+        tools:listitem="@layout/activity_curs_item" />
+
+    <EditText
+        android:id="@+id/nume_curs"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="curs"
         app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintLeft_toLeftOf="@id/student_nivel"
         app:layout_constraintRight_toRightOf="@id/sigla_utcn"
         app:layout_constraintTop_toBottomOf="@id/student_nivel"
-        app:layout_constraintVertical_bias="0.399"
-        tools:listitem="@layout/activity_curs_item" />
+        />
+    <EditText
+        android:id="@+id/nume_profesor"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="profesor"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintLeft_toLeftOf="@id/student_nivel"
+        app:layout_constraintRight_toRightOf="@id/sigla_utcn"
+        app:layout_constraintTop_toBottomOf="@id/nume_curs"
+        />
+    <EditText
+    android:id="@+id/prezente_curs"
+    android:layout_width="407dp"
+    android:layout_height="50dp"
+    android:inputType="number"
+    android:padding="10dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:text="0"
+    app:layout_constraintHorizontal_bias="0.566"
+    app:layout_constraintLeft_toLeftOf="@id/student_nivel"
+    app:layout_constraintRight_toRightOf="@id/sigla_utcn"
+    app:layout_constraintTop_toBottomOf="@+id/nume_profesor"
+    />
+
+    <EditText
+        android:id="@+id/link_curs"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="link"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintLeft_toLeftOf="@id/student_nivel"
+        app:layout_constraintRight_toRightOf="@id/sigla_utcn"
+        app:layout_constraintTop_toBottomOf="@+id/prezente_curs"
+        />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/link_curs"
+        android:layout_margin="12dp"
+        android:text="@string/add_curs"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:onClick="modificare"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
