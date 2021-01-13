@@ -42,7 +42,8 @@ class StatisticaCursuri : AppCompatActivity(){
     }
 
     fun proiect(view : View){
-
+        val intent = Intent(this, ProiectActivity::class.java)
+        startActivity(intent)
     }
 
 }
