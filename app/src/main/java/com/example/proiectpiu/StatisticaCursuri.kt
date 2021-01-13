@@ -41,5 +41,8 @@ class StatisticaCursuri : AppCompatActivity(){
         Toast.makeText(this,"Curs Adaugat",Toast.LENGTH_SHORT).show()
     }
 
+    fun proiect(view : View){
+
+    }
 
 }

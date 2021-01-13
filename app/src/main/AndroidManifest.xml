@@ -13,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProiectPIU">
+        <activity android:name=".ProiectActivity"></activity>
+        <activity android:name=".QuizDemoIntrebari" />
+        <activity android:name=".QuizDemo" />
+
         <uses-library
             android:name="com.google.android.wearable"
             android:required="false" />

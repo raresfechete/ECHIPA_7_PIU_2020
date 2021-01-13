@@ -14,4 +14,10 @@ class Quizuri {
 
     }
 
+    fun getQuizDemo():ArrayList<Quiz>{
+        val quizuri = ArrayList<Quiz>()
+        quizuri.add(Quiz("SRF","colocviu","100"))
+        return quizuri
+    }
+
 }
