@@ -4,4 +4,10 @@
     <string name="profesie1">Student</string>
     <string name="profil">Calculatoare</string>
     <string name="add_curs">Add Curs</string>
+    <string name="title_activity_chat">Chat</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>
