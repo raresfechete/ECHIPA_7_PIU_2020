@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".QuizDemoIntrebari">
+
+    <TextView
+        android:id="@+id/intrebare_demo_quiz"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Intrebare 1:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:background="@color/purple_700"
+        />
+    <RadioButton
+        android:id="@+id/radio_1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/intrebare_demo_quiz"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:text="raspuns1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/purple_700"
+        />
+    <RadioButton
+        android:id="@+id/radio_2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/radio_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:text="raspuns1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/purple_700"
+        />
+    <RadioButton
+        android:id="@+id/radio_3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/radio_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:text="raspuns1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/purple_700"
+        />
+
+    <Button
+        android:id="@+id/button_prev_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Prev"
+        app:layout_constraintTop_toBottomOf="@id/radio_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/button_next_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Next"
+        app:layout_constraintTop_toBottomOf="@id/radio_3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/button_finish_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Finish"
+        app:layout_constraintTop_toBottomOf="@id/button_next_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,4 +49,9 @@ class Student : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun quizDemo(view: View){
+        val intent = Intent(this, QuizDemo::class.java)
+        startActivity(intent)
+    }
+
 }

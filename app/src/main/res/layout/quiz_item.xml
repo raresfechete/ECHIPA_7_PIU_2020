@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/border"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <TextView
         android:id="@+id/textViewCursName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="48dp"
         android:ems="5"
@@ -24,8 +25,8 @@
 
     <TextView
         android:id="@+id/textViewQuizTitle"
-        android:layout_width="126dp"
-        android:layout_height="48dp"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
         android:layout_marginTop="28dp"
         android:padding="5dp"
         android:text="Titlu quiz"
@@ -39,8 +40,8 @@
 
     <TextView
         android:id="@+id/textViewPunctaj"
-        android:layout_width="125dp"
-        android:layout_height="43dp"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
         android:layout_marginTop="36dp"
         android:padding="5dp"
         android:text="Punctaj"
@@ -54,13 +55,15 @@
 
     <EditText
         android:id="@+id/displayCursName"
-        android:layout_width="187dp"
-        android:layout_height="46dp"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="36dp"
         android:ems="11"
         android:gravity="center"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toRightOf="@id/textViewCursName"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewCursName"
@@ -69,7 +72,7 @@
     <EditText
         android:id="@+id/displayQuizTitle"
         android:layout_width="184dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="11"
         android:gravity="center"
@@ -78,14 +81,16 @@
         app:layout_constraintLeft_toRightOf="@id/textViewPunctaj"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewPunctaj"
-        app:layout_constraintTop_toTopOf="@id/textViewQuizTitle" />
+        app:layout_constraintTop_toTopOf="@id/textViewQuizTitle"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/displayPunctaj"
-        android:layout_width="190dp"
-        android:layout_height="44dp"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
         android:ems="11"
         android:gravity="center"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintLeft_toRightOf="@id/textViewPunctaj"
@@ -93,5 +98,14 @@
         app:layout_constraintStart_toEndOf="@id/textViewPunctaj"
         app:layout_constraintTop_toTopOf="@id/textViewPunctaj" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="GO TO"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="demoQuiz"
+        app:layout_constraintTop_toBottomOf="@id/textViewPunctaj"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
