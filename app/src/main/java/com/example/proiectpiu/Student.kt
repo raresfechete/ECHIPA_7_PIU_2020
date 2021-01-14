@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 
 class Student : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,6 +56,11 @@ class Student : AppCompatActivity() {
 
     fun chat(view: View){
         val intent = Intent(this,Chat::class.java)
+        startActivity(intent)
+    }
+
+    fun ranking(view: View){
+        val intent = Intent(this,RankingActivity::class.java)
         startActivity(intent)
     }
 

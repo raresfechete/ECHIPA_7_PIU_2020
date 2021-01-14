@@ -78,7 +78,7 @@
         android:id="@+id/student_statistica_cursuri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_700"
         android:onClick="statisticaCursuri"
         android:text="Statistica cursuri"
@@ -93,7 +93,7 @@
         android:id="@+id/student_voteaza"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_700"
         android:text="Voteaza"
         android:textSize="16sp"
@@ -108,7 +108,7 @@
         android:id="@+id/chat_student"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_700"
         android:text="Chat"
         android:textSize="16sp"
@@ -123,7 +123,7 @@
         android:id="@+id/student_feedback"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_700"
         android:text="Feedback"
         android:textSize="16sp"
@@ -131,7 +131,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/student_statistica_cursuri"
         app:layout_constraintRight_toRightOf="@+id/student_statistica_cursuri"
-        app:layout_constraintTop_toBottomOf="@+id/student_voteaza"
+        app:layout_constraintTop_toBottomOf="@+id/student_quizDemo"
         android:onClick="feedback"/>
 
     <Button
@@ -183,6 +183,22 @@
         />
 
 
+
+    <Button
+        android:id="@+id/student_ranking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Rankings"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/student_statistica_cursuri"
+        app:layout_constraintRight_toRightOf="@id/student_statistica_cursuri"
+        app:layout_constraintTop_toBottomOf="@id/chat_student"
+        android:onClick="ranking"
+        />
 
     <ImageView
         android:layout_width="93dp"
