@@ -27,7 +27,6 @@ class StatisticaCursuri : AppCompatActivity(){
         cursuriAdapter = CursuriAdapter(this@StatisticaCursuri, lista.getCursuri())
         listReference.adapter = cursuriAdapter
 
-        registerForContextMenu(listReference)
     }
 
     fun goToProfil(view: View) {
