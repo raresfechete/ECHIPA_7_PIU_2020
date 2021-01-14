@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cursuri_array">
+        <item>PIU</item>
+        <item>SRF</item>
+        <item>SD</item>
+        <item>PBD</item>
+    </string-array>
+</resources>
