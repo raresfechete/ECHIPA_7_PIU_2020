@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/border"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
 
     <TextView
         android:id="@+id/textViewCursName"
@@ -97,16 +97,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewPunctaj"
         app:layout_constraintTop_toTopOf="@id/textViewPunctaj" />
-
-    <Button
-        android:id="@+id/go_to_buton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:text="GO TO"
-        app:layout_constraintRight_toRightOf="parent"
-        android:onClick="demoQuiz"
-        app:layout_constraintTop_toBottomOf="@id/textViewPunctaj"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

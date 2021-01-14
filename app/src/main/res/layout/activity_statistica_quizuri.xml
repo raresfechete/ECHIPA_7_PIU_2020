@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="@+id/image_student2" />
 
     <ListView
-        android:id="@+id/myRecyclerViewQuizuri"
+        android:id="@+id/myRecyclerViewQuizuri_stat"
         android:layout_width="407dp"
         android:layout_height="580dp"
         android:padding="10dp"
@@ -86,6 +86,6 @@
         app:layout_constraintRight_toRightOf="@id/sigla_utcn2"
         app:layout_constraintTop_toBottomOf="@id/student_nivel2"
         app:layout_constraintVertical_bias="0.381"
-        tools:listitem="@layout/quiz_item" />
+        tools:listitem="@layout/quiz_item_quiz_stat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

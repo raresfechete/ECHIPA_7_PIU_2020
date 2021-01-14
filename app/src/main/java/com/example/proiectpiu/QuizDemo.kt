@@ -16,7 +16,9 @@ class QuizDemo : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_demo)
         val listReference = findViewById<ListView>(R.id.quiz_list)
+
         quizAdapter = QuizAdapter(this@QuizDemo, Quizuri().getQuizDemo())
+        quizAdapter!!.setReso(R.layout.quiz_item)
         listReference.adapter = quizAdapter
 
     }
