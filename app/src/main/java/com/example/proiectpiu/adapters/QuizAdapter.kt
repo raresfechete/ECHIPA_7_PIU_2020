@@ -6,10 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.EditText
+import android.widget.ListView
 import com.example.proiectpiu.Quiz
 import com.example.proiectpiu.R
 
 class QuizAdapter(private val context: Context, private var quizList: ArrayList<Quiz>) : BaseAdapter() {
+
+    var res: Int=1
 
     private val inflater: LayoutInflater =
         context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -26,9 +29,16 @@ class QuizAdapter(private val context: Context, private var quizList: ArrayList<
         return position.toLong()
     }
 
+    fun setReso(int: Int)
+    {
+        res=int
+    }
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
-        val item = inflater.inflate(R.layout.quiz_item, parent, false)
+
+
+        val item = inflater.inflate(res, parent, false)
 
         val displayCursName = item.findViewById<EditText>(R.id.displayCursName)
         val displayQuizTitle = item.findViewById<EditText>(R.id.displayQuizTitle)

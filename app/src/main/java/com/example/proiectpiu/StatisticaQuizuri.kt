@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ListView
-import android.widget.TextView
-import com.example.proiectpiu.adapters.CursuriAdapter
 import com.example.proiectpiu.adapters.QuizAdapter
 
 class StatisticaQuizuri : AppCompatActivity() {
@@ -19,9 +17,10 @@ class StatisticaQuizuri : AppCompatActivity() {
         setContentView(R.layout.activity_statistica_quizuri)
 
 
-        val listReference = findViewById<ListView>(R.id.myRecyclerViewQuizuri)
+        val listReference = findViewById<ListView>(R.id.myRecyclerViewQuizuri_stat)
 
         quizAdapter = QuizAdapter(this@StatisticaQuizuri, Quizuri().getQuizuri())
+        quizAdapter!!.setReso(R.layout.quiz_item_quiz_stat)
         listReference.adapter = quizAdapter
 
     }
