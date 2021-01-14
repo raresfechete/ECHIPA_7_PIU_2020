@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_student"
+        android:layout_width="95dp"
+        android:layout_height="91dp"
+        android:src="@drawable/student"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student_name_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/stars_ranking"
+        app:layout_constraintLeft_toRightOf="@id/image_student" />
+
+    <RatingBar
+        android:id="@+id/stars_ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0"
+        app:layout_constraintStart_toEndOf="@+id/image_student"
+        app:layout_constraintTop_toTopOf="@id/student_name_ranking" />
+
+    <TextView
+        android:id="@+id/rank_absolut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:text="99 / 140"
+        app:layout_constraintBottom_toTopOf="@id/stars_ranking"
+        app:layout_constraintLeft_toRightOf="@id/student_name_ranking"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

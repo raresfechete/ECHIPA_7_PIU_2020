@@ -16,6 +16,7 @@
         <activity android:name=".ProiectActivity"></activity>
         <activity android:name=".QuizDemoIntrebari" />
         <activity android:name=".QuizDemo" />
+        <activity android:name=".RankingActivity" />
 
         <uses-library
             android:name="com.google.android.wearable"
